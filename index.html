@@ -11,6 +11,46 @@
             margin: 0;
             padding: 0;
         }
+        header {
+            background-color: #4E9E47; /* Verde más oscuro */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        }
+        h1 {
+            color: #FFF; /* Texto blanco */
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        .logo img {
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+        }
+        .login-buttons {
+            display: flex;
+            gap: 10px;
+        }
+        .login-buttons a {
+            text-decoration: none;
+        }
+        .button {
+            background-color: #F6B352; /* Amarillo */
+            color: #FFF;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .button:hover {
+            background-color: #F0A32F; /* Amarillo más oscuro */
+        }
         .container {
             background-color: #4E9E47; /* Verde más oscuro */
             border-radius: 8px;
@@ -19,7 +59,7 @@
             padding: 20px;
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
         }
-        h1 {
+        h2 {
             color: #FFF; /* Texto blanco */
             text-align: center;
         }
@@ -61,8 +101,18 @@
     </style>
 </head>
 <body>
+    <header>
+        <div class="logo">
+            <img src="duckbank-logo.png" alt="Logo de DuckBank">
+            <h1>DuckBank</h1>
+        </div>
+        <div class="login-buttons">
+            <a href="index.html" class="button">Iniciar Sesión</a>
+            <a href="#" class="button">Registrarse</a>
+        </div>
+    </header>
     <div class="container">
-        <h1>Iniciar Sesión - DuckBank</h1>
+        <h2>Iniciar Sesión - DuckBank</h2>
         <form action="#" method="post">
             <label for="usuario">Nombre de Usuario o Correo Electrónico:</label>
             <input type="text" id="usuario" name="usuario" required>
